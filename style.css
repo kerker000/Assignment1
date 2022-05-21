@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* CSS start  */
+
+
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* nav bar */
+.nav{
+    width: 940px;
+    height: 40px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 40px;
+    width: 180px;
+}
+
+.nav-button{
+    font-size: 16px;
+    display: flex;
+    height: 24px;
+    align-items: center;
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+    height: 22px;
+    align-items: center;
+    text-align: center;
+
+}
+
+li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:#3F5D45;
+    font-family: PingFangHK-Regular, sans-serif;
+    font-weight: 800;
+}
+
+
+.cart-icon{
+    padding-left: 79px;
+}
+
+
+/* banner */
+.banner{
+    width: 940px;
+    height: 496px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/* main */
+.main{
+    width: 940px;
+
+}
+
+.category{
+    width: 300px;
+}
+
+
+h2{
+    font-size: 24px;
+    font-family: PingFangHK-Regular, sans-serif;
+    font-weight: bold;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-title{
+    background-color: #3F5D45;
+    color:#EAF0ED;
+    height: 65px;
+
+}
+
+.category-all{
+    height: 65px;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    border: #EAF0ED solid 1px;
+}
+
+.category-items{
+    background-color: #FFFFFF;
+    color: #3F5D45;
+    height: 65px;
+    border: #EAF0ED solid 1px;
+}
+
+
+.product-list{
+    width: 620px;
+    
+}
+
+.product-img{
+    height: 315px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img-1{
+    background-image: url("img/p-1.png");
+}
+
+.product-img-2{
+    background-image: url("img/p-2.png");
+}
+
+.product-img-3{
+    background-image: url("img/p-3.png");
+}
+
+.product-img-4{
+    background-image: url("img/p-4.png");
+}
+
+.product-img-5{
+    background-image: url("img/p-5.png");
+}
+
+.product-img-6{
+    background-image: url("img/p-6.png");
+}
+
+.daily-choice{
+    width: 16px;
+    height: 87.24px;
+    padding: 10.08px 10px 9.24px;
+    line-height: 135%;
+    /* height: 106.73px; */
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    font-size: 16px;
+    margin-left: 20px;
+
+}
+
+.favorite{
+    margin:19px 22px 0 0;
+    height: 20px;
+    width: 20px;
+}
+
+.product-info{
+    width: 300px;
+    height: 56px;
+    display: flex;
+}
+
+.product-name{
+    width: 170px;
+    color: #3F5D45;
+    font-size: 20px;
+    font-family: PingFangHK-Regular, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: #EAF0ED 1px solid;
+}
+
+.product-price{
+    width: 127px;
+    color: #3F5D45;
+    font-size: 20px;
+    font-family: PingFangHK-Regular, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: #EAF0ED 1px solid;
+    border-right: #EAF0ED 1px solid;
+}
+
+.add-to-cart{
+    width: 300px;
+    height: 65px;
+    color: #3F5D45;
+    font-size: 20px;
+    font-family: PingFangHK-Regular, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAF0ED;
+}
+
+.product{
+    margin-bottom: 20px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    justify-content: space-between;
+}
+
+.page{
+    width: 620px;
+    height: 62px;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 60px;
+
+}
+
+.page img{
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+}
+
+
+.page-link{
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    border: #EAF0ED solid 1px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: PingFangHK-Regular, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3F5D45;
+}
+
+.page-present{
+    background-color: #3F5D45;
+    border: #3F5D45 1px solid;
+    color: #FFFFFF;
+}
+
+.no-left-border{
+    border-left: none;
+}
